@@ -1,13 +1,13 @@
 @extends('system.dashboard')
 
 @section('content')
-<div class="col-md-10 content-center">
+<div class="col-md-10 col-md-offset-1 content-center">
     <div class="">
-        <form class="form" method="POST" action="/freelancers/enroll">
+        <form class="form" method="POST" action="/system/new_user">
           {{ csrf_field() }}
             <div class="header header-primary text-center">
                 <div class="logo-container">
-                    <img width="200px" src="/assets/img/topclassbg.png" class="Topclass-logo" />
+                    <img width="200px" src="/logo/kalya.png" class="kalya-logo" />
                 </div>
             </div>
             <div class="row">

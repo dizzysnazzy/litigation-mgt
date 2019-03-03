@@ -1,6 +1,9 @@
 <?php
 
 // Login view.
+
+use Illuminate\Support\Facades\Route;
+
 Route::get('/', [
     'uses' => 'Auth\LoginController@login',
 ]);
@@ -24,14 +27,13 @@ Route::post('register', [
 Route::get('/sys/admin', function() {
   return view('system.home');
 });
+//    new user profile
+    Route::get('/system/new_user', [
+        'uses' => 'User\newUserCtrl@newUser',
+    ]);
 
-Route::get('/system/register', [
-    'uses' => 'Auth\RegisterController@new_user',
-]);
-
-Route::post('/system/register', [
-    'as'   => 'register-new',
-    'uses' => 'Auth\RegisterController@registerNew',
-]);
-
-route::get('/system/new_user', 'User\newUserCtrl@newUser');
+    Route::post('/system/new_user', [
+        'as'   => 'register-new',
+        'uses' => 'User\newUserCtrl@registerNew',
+    ]);
+//   end new user profile
