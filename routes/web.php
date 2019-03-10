@@ -37,3 +37,10 @@ Route::get('/sys/admin', function() {
         'uses' => 'User\newUserCtrl@registerNew',
     ]);
 //   end new user profile
+Route::get('/system/view/users', [
+    'uses' => 'User\newUserCtrl@viewUsers',
+]);
+
+Route::delete('/system/profile/{id}/delete', [
+    'uses' => 'User\newUserCtrl@deleteUser',
+]);

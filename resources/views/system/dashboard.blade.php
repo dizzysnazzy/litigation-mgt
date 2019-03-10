@@ -182,16 +182,40 @@
         <li class="header">MAIN NAVIGATION</li>
         <li class="treeview">
           <a href="#">
-            <i class="fa fa-university"></i> <span>Manage Users</span>
+            <i class="fa fa-users"></i> <span>Manage Users</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
             <li><a href="/system/new_user"><i class="fa fa-circle-o"></i>Add User</a></li>
-            <li><a href="/system/view_users"><i class="fa fa-circle-o"></i>Completed Assignments</a></li>
+            <li><a href="/system/view/users"><i class="fa fa-circle-o"></i>View Users</a></li>
           </ul>
         </li>
+          <li class="treeview">
+              <a href="#">
+                  <i class="fa fa-gavel"></i> <span>Matters</span>
+                  <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+              </a>
+              <ul class="treeview-menu">
+                  <li><a href="/cases/add-new"><i class="fa fa-circle-o"></i>New Case</a></li>
+                  <li><a href="/cases/view"><i class="fa fa-circle-o"></i>View Cases</a></li>
+              </ul>
+          </li>
+          <li class="treeview">
+              <a href="#">
+                  <i class="fa fa-contact"></i> <span>Contacts</span>
+                  <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+              </a>
+              <ul class="treeview-menu">
+                  <li><a href="/system/new_user"><i class="fa fa-circle-o"></i>Add Contact</a></li>
+                  <li><a href="/system/view/users"><i class="fa fa-circle-o"></i>View Contacts</a></li>
+              </ul>
+          </li>
       </ul>
     </section>
     <!-- /.sidebar -->

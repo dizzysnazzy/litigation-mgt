@@ -15,9 +15,21 @@ class newUserCtrl extends Controller
     }
     public function registerNew(Request $request)
     {
+        $employee = new Profile();
+
+        $employee->first_name = $request->input('first_name');
+        $employee->last_name = $request->input('last_name');
+        $employee->p_no = $request->input('p_no');
+        $employee->email = $request->input('email');
+        $employee->designation = $request->input('designation');
+        $employee->access_level = $request->input('access_level');
+        $employee->phone_no = $request->input('phone_no');
+        $employee->nat_id = $request->input('nat_id');
+        $employee->save();
+
         $user = Sentinel::registerAndActivate([
             'email'=>$request->input('email'),
-            'password'=>$request->input('password'),
+            'password'=>$request->input('nat_id'),
             'first_name'=>$request->input('first_name'),
             'last_name'=>$request->input('last_name'),
         ]);
@@ -47,7 +59,24 @@ class newUserCtrl extends Controller
             $clerk->users()->attach($user);
         }
 
-        return redirect('/dashboard');
+        return redirect('/system/view/users');
 
+    }
+
+    public function viewUsers()
+    {
+        $profiles = Profile::all();
+
+        return view('system.users.view', compact('profiles'));
+
+    }
+
+    public function deleteUser($id)
+    {
+        $user = Profile::findOrFail($id);
+
+        $user->delete();
+
+        return redirect()->back();
     }
 }

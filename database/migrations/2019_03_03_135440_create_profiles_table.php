@@ -18,6 +18,7 @@ class CreateProfilesTable extends Migration
             $table->string('first_name');
             $table->string('last_name');
             $table->string('p_no')->nullable();
+            $table->string('email');
             $table->string('designation');
             $table->string('access_level');
             $table->string('phone_no');

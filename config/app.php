@@ -175,7 +175,6 @@ return [
         fms\Providers\EventServiceProvider::class,
         fms\Providers\RouteServiceProvider::class,
         Cartalyst\Sentinel\Laravel\SentinelServiceProvider::class,
-        ConsoleTVs\Charts\ChartsServiceProvider::class,
         Kagga\Telco\TelcoServiceProvider::class
 
     ],
@@ -227,7 +226,6 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'Sentinel'   => Cartalyst\Sentinel\Laravel\Facades\Sentinel::class,
-        'Charts' => ConsoleTVs\Charts\Facades\Charts::class,
         'Telco' => Kagga\Telco\facades\Telco::class,
 
     ],

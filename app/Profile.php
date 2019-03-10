@@ -10,6 +10,7 @@ class Profile extends Model
         'first_name',
         'last_name',
         'p_no',
+        'email',
         'designation',
         'access_level',
         'phone_no',
