@@ -92,7 +92,7 @@
   </script>
 
 </head>
-<body class="hold-transition skin-red sidebar-mini">
+<body class="hold-transition skin-yellow sidebar-mini">
 <div class="wrapper">
 
   <header class="main-header">
@@ -199,14 +199,14 @@
               <i class="fa fa-angle-left pull-right"></i>
             </span>
               </a>
-              <ul class="treeview-menu">
-                  <li><a href="/cases/add-new"><i class="fa fa-circle-o"></i>New Case</a></li>
-                  <li><a href="/cases/view"><i class="fa fa-circle-o"></i>View Cases</a></li>
+              <ul class="treeview-menu">Cases
+                  <li><a href="/system/matter/new"><i class="fa fa-circle-o"></i>New Matter</a></li>
+                  <li><a href="/system/matter/view"><i class="fa fa-circle-o"></i>View Matters</a></li>
               </ul>
           </li>
           <li class="treeview">
               <a href="#">
-                  <i class="fa fa-contact"></i> <span>Contacts</span>
+                  <i class="fa fa-phone"></i> <span>Contacts</span>
                   <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
@@ -225,20 +225,11 @@
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
-      <h1>
+      <h4>
         Dashboard
         <small>Control panel</small>
-      </h1>
-      <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Dashboard</li>
-      </ol>
-    </section>
+      </h4>
 
-    <!-- Main content -->
-    <section class="content">
-
-      <div class="row">
         @yield('content')
       </div>
     </section>
@@ -253,8 +244,8 @@
     <script>
         document.write(new Date().getFullYear())
     </script>,
-    <a href="http://www.imond.co.ke" target="_blank">kalya &amp; CO</a>.</p> All rights
-    reserved.
+    <a href="http://www.imond.co.ke" target="_blank">kalya &amp; CO</a>. All rights
+      reserved.</p>
   </footer>
 
 </div>

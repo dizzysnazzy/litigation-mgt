@@ -1,6 +1,11 @@
 @extends('system.dashboard')
 
 @section('content')
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li class="active">View Users</li>
+    </ol>
+    </section>
     <div class="col-md-12">
         <a class="btn btn-success btn-lg pull-right" href="/system/new_user">New User</a>
         <table id="example2" class="table table-bordered table-striped">

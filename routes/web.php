@@ -44,3 +44,7 @@ Route::get('/system/view/users', [
 Route::delete('/system/profile/{id}/delete', [
     'uses' => 'User\newUserCtrl@deleteUser',
 ]);
+//matter view add
+Route::get('/system/matter/new', 'MatterCtrl@index');
+
+Route::post('/system/matter/new', 'MatterCtrl@newMatter');

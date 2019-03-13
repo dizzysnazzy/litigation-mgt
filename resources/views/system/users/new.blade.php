@@ -1,6 +1,11 @@
 @extends('system.dashboard')
 
 @section('content')
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li class="active">New User</li>
+    </ol>
+    </section>
     <div class="col-md-12">
         <div class="header header-primary text-center">
             <div class="logo-container">
