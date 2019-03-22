@@ -48,3 +48,7 @@ Route::delete('/system/profile/{id}/delete', [
 Route::get('/system/matter/new', 'MatterCtrl@index');
 
 Route::post('/system/matter/new', 'MatterCtrl@newMatter');
+
+Route::get('/system/cases/view', 'MatterCtrl@viewMatters');
+
+Route::delete('/system/matter/{id}/delete', 'MatterCtrl@destroy');

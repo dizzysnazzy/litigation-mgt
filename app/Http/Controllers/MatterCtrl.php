@@ -2,8 +2,11 @@
 
 namespace fms\Http\Controllers;
 
+use fms\Matter;
 use Illuminate\Http\Request;
 use fms\Profile;
+use Sentinel;
+
 
 class MatterCtrl extends Controller
 {
