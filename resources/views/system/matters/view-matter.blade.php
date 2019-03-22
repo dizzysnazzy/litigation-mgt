@@ -2,27 +2,46 @@
 
 @push('js')
     <script src="{{ asset('fullcalendar/packages/core/main.js') }}"></script>
+    <script src="{{ asset('fullcalendar/packages/interaction/main.js') }}"></script>
     <script src="{{ asset('fullcalendar/packages/daygrid/main.js') }}"></script>
+    <script src="{{ asset('fullcalendar/packages/timegrid/main.js') }}"></script>
+    <script src="{{ asset('fullcalendar/packages/list/main.js') }}"></script>
     <script>
-        $(document).ready(function() {
-            // page is now ready, initialize the calendar...
-            $('#calendar').fullCalendar({
-                // put your options and callbacks here
-                events : [
-                        @foreach($tasks as $task)
+        document.addEventListener('DOMContentLoaded', function() {
+            var calendarEl = document.getElementById('calendar');
+
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                plugins: [ 'interaction', 'dayGrid', 'timeGrid', 'list' ],
+                height: 'parent',
+                header: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
+                },
+                defaultView: 'dayGridMonth',
+                defaultDate: '2019-03-12',
+                navLinks: true, // can click day/week names to navigate views
+                editable: true,
+                eventLimit: true, // allow "more" link when too many events
+                events: [
+                    @foreach($tasks as $task)
                     {
-                        title : '{{ $task->task_name }}',
-                        start : '{{ $task->task_date }}'
+                        title: '{{ $task->task_name }}',
+                        start: '{{ $task->task_date }}',
                     },
                     @endforeach
                 ]
-            })
+            });
+
+            calendar.render();
         });
     </script>
 @endpush
 @push('css')
     <link href="{{ asset('fullcalendar/packages/core/main.css') }}" rel='stylesheet' />
     <link href="{{ asset('fullcalendar/packages/daygrid/main.css') }}" rel='stylesheet' />
+    <link href="{{ asset('fullcalendar/packages/timegrid/main.css') }}" rel='stylesheet' />
+    <link href="{{ asset('fullcalendar/packages/list/main.css') }}" rel='stylesheet' />
 @endpush
 
 @section('content')
@@ -154,7 +173,9 @@
                     <br><br><hr style="border-right: 1px solid #F20000;"></hr>
 
                     <div class="col-md-10">
-                        <div id='calendar'></div>
+                        <div id='calendar-container'>
+                            <div id='calendar'></div>
+                        </div>
                     </div>
                 </div>
 
