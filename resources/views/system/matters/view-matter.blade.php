@@ -1,6 +1,7 @@
 @extends('system.dashboard')
 
 @push('js')
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.1.0/fullcalendar.min.css' />
     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.1.0/fullcalendar.min.js'></script>
@@ -150,24 +151,8 @@
                     <br><br><hr style="border-right: 1px solid #F20000;"></hr>
 
                     <div class="col-md-10">
-                        <h4> <span class="badge custom-badge pull-left">Exam Details</span> </h4>
-                        <table class="table table-bordered table-striped">
-                            <thead>
-                            <th>ID</th>
-                            <th>Unit Name</th>
-                            <th>Unit Code</th>
-                            <th>Term</th>
-                            <th>Cat</th>
-                            <th>End Term Score</th>
-                            <th>Average</th>
-                            </thead>
-                            <tbody>
-
-                        </table>
+                        <div id='calendar'></div>
                     </div>
-                    <p class="imondfont" align="justify">
-
-                    </p>
                 </div>
 
         </div>
