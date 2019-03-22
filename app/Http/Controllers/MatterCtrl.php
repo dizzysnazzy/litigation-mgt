@@ -46,7 +46,9 @@ class MatterCtrl extends Controller
     {
         $case = Matter::findOrFail($id);
 
-        return view('system.matters.view-matter', compact('case'));
+        $tasks = Task::where('matter_id', $id)->get();
+
+        return view('system.matters.view-matter', compact('case', 'tasks'));
     }
 
     public function editMatter($id)
