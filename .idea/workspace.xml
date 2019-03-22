@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe79cae9-ad2c-4db0-bea5-a9f2f1cdf432" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/system/matters/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/system/tasks/new.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MatterCtrl.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MatterCtrl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Matter.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Matter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/system/matters/view.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/system/matters/view.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TaskCtrl.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TaskCtrl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/system/matters/view-matter.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/system/matters/view-matter.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,11 +26,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/TaskCtrl.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="35" column="33" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
+            <state relative-caret-position="314">
+              <caret line="35" column="34" lean-forward="true" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
               <folding>
                 <element signature="e#40#55#0#PHP" expanded="true" />
               </folding>
@@ -54,8 +50,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="46" column="30" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
+            <state relative-caret-position="290">
+              <caret line="62" column="33" lean-forward="true" selection-start-line="62" selection-start-column="12" selection-end-line="62" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/system/matters/view-matter.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="149">
+              <caret line="127" column="94" selection-start-line="127" selection-start-column="94" selection-end-line="127" selection-end-column="94" />
             </state>
           </provider>
         </entry>
@@ -102,8 +107,6 @@
         <option value="$PROJECT_DIR$/database/seeds/UserTableSeeder.php" />
         <option value="$PROJECT_DIR$/resources/views/system/dashboard.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/system/matters/new.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/system/matters/view-matter.blade.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/system/matters/view.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/MatterCtrl.php" />
         <option value="$PROJECT_DIR$/resources/views/system/matters/edit.blade.php" />
@@ -112,6 +115,8 @@
         <option value="$PROJECT_DIR$/database/migrations/2019_03_22_165957_create_tasks_table.php" />
         <option value="$PROJECT_DIR$/app/Task.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/TaskCtrl.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/resources/views/system/matters/view-matter.blade.php" />
       </list>
     </option>
   </component>
@@ -297,6 +302,14 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="system" type="462c0819:PsiDirectoryNode" />
+              <item name="matters" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fms" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="system" type="462c0819:PsiDirectoryNode" />
               <item name="tasks" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -366,7 +379,7 @@
       <workItem from="1552372893916" duration="106000" />
       <workItem from="1552381933406" duration="3450000" />
       <workItem from="1552468572103" duration="84000" />
-      <workItem from="1553269082519" duration="6411000" />
+      <workItem from="1553269082519" duration="6747000" />
     </task>
     <task id="LOCAL-00001" summary="new user ui">
       <created>1551623635408</created>
@@ -386,7 +399,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31467000" />
+    <option name="totallyTimeSpent" value="31803000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="696" extended-state="6" />
@@ -540,30 +553,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/system/matters/view-matter.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="41" column="30" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
-          <folding>
-            <element signature="e#1486#1513#0#HTML" expanded="true" />
-            <element signature="e#1570#1624#0#HTML" expanded="true" />
-            <element signature="e#4347#4401#0#HTML" expanded="true" />
-            <element signature="e#5845#5885#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/system/matters/new.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="77" column="26" selection-end-line="120" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="46" column="30" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -631,11 +624,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/TaskCtrl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="35" column="33" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
+        <state relative-caret-position="314">
+          <caret line="35" column="34" lean-forward="true" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
           <folding>
             <element signature="e#40#55#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="62" column="33" lean-forward="true" selection-start-line="62" selection-start-column="12" selection-end-line="62" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/system/matters/view-matter.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="127" column="94" selection-start-line="127" selection-start-column="94" selection-end-line="127" selection-end-column="94" />
         </state>
       </provider>
     </entry>

@@ -9,7 +9,7 @@ use Sentinel;
 
 class TaskCtrl extends Controller
 {
-    public function index()
+    public function index($id)
     {
         $tasks = Task::all();
 
@@ -35,6 +35,8 @@ class TaskCtrl extends Controller
         $task->task_description = $request->input('task_description');
         $task->created_by = $user;
         $task->save();
+
+        return redirect()->back();
 
     }
 }

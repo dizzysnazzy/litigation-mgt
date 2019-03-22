@@ -125,7 +125,7 @@
                     </div>
             </div>
                 <div class="tab-pane" id="tasks">
-                    <a class="btn btn-success btn-lg pull-left" href="/system/tasks/{{$case->id}}/new">New Task</a>
+                    <a class="btn btn-success btn-lg pull-left" href="/system/task/{{$case->id}}/new">New Task</a>
                     <br><br><hr style="border-right: 1px solid #F20000;"></hr>
 
                     <div class="col-md-10">

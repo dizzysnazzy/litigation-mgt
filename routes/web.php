@@ -58,3 +58,7 @@ Route::get('/system/case/{id}/update', 'MatterCtrl@editMatter');
 Route::put('/system/case/{id}/update', 'MatterCtrl@updateMatter');
 
 Route::delete('/system/matter/{id}/delete', 'MatterCtrl@destroy');
+
+//Tasks view
+Route::get('/system/task/{id}/new', 'TaskCtrl@addTask');
+
