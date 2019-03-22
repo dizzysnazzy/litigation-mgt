@@ -45,6 +45,8 @@
   <!-- Main CSS Stylesheet -->
   <link rel="stylesheet" type="text/css" href="{{ asset('blog/css/style.css')}}">
 
+  @stack('js')
+
   <script>
     tinymce.init({
       selector: 'textarea',
