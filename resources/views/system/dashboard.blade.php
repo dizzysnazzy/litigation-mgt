@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Lit Portal || Admin</title>
+  <title>Litigation Management || Portal</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.6 -->
@@ -40,59 +40,58 @@
   <link rel="icon" href="{{url('/imond/img/imond.png')}}">
   <script src="/blog/tinymce/tinymce.min.js"></script>
   <!-- All CSS Plugins -->
-  <!-- <link rel="stylesheet" type="text/css" href="{{ asset('blog/css/plugin.css')}}"> -->
+<!-- <link rel="stylesheet" type="text/css" href="{{ asset('blog/css/plugin.css')}}"> -->
 
   <!-- Main CSS Stylesheet -->
   <link rel="stylesheet" type="text/css" href="{{ asset('blog/css/style.css')}}">
 
   <script>
     tinymce.init({
-          selector: 'textarea',
-          height: 500,
-          setup: function (editor) {
-              editor.on('init change', function () {
-                  editor.save();
-              });
-          },
-          plugins: [
-              "advlist autolink lists link image charmap print preview anchor",
-              "searchreplace visualblocks code fullscreen",
-              "insertdatetime media table contextmenu paste imagetools"
-          ],
-          toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image",
-          content_css: [
-              '//fonts.googleapis.com/css?family=Lato:300,300i,400,400i',
-              '//www.tinymce.com/css/codepen.min.css'
-          ],
-          image_title: true,
-          automatic_uploads: true,
-          images_upload_url: '/upload',
-          file_picker_types: 'image',
-          file_picker_callback: function(cb, value, meta) {
-              var input = document.createElement('input');
-              input.setAttribute('type', 'file');
-              input.setAttribute('accept', 'image/*');
-              input.onchange = function() {
-                  var file = this.files[0];
-
-                  var reader = new FileReader();
-                  reader.readAsDataURL(file);
-                  reader.onload = function () {
-                      var id = 'blobid' + (new Date()).getTime();
-                      var blobCache =  tinymce.activeEditor.editorUpload.blobCache;
-                      var base64 = reader.result.split(',')[1];
-                      var blobInfo = blobCache.create(id, file, base64);
-                      blobCache.add(blobInfo);
-                      cb(blobInfo.blobUri(), { title: file.name });
-                  };
-              };
-              input.click();
-          }
-      });
+      selector: 'textarea',
+      height: 500,
+      setup: function (editor) {
+        editor.on('init change', function () {
+          editor.save();
+        });
+      },
+      plugins: [
+        "advlist autolink lists link image charmap print preview anchor",
+        "searchreplace visualblocks code fullscreen",
+        "insertdatetime media table contextmenu paste imagetools"
+      ],
+      toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image",
+      content_css: [
+        '//fonts.googleapis.com/css?family=Lato:300,300i,400,400i',
+        '//www.tinymce.com/css/codepen.min.css'
+      ],
+      image_title: true,
+      automatic_uploads: true,
+      images_upload_url: '/upload',
+      file_picker_types: 'image',
+      file_picker_callback: function(cb, value, meta) {
+        var input = document.createElement('input');
+        input.setAttribute('type', 'file');
+        input.setAttribute('accept', 'image/*');
+        input.onchange = function() {
+          var file = this.files[0];
+          var reader = new FileReader();
+          reader.readAsDataURL(file);
+          reader.onload = function () {
+            var id = 'blobid' + (new Date()).getTime();
+            var blobCache =  tinymce.activeEditor.editorUpload.blobCache;
+            var base64 = reader.result.split(',')[1];
+            var blobInfo = blobCache.create(id, file, base64);
+            blobCache.add(blobInfo);
+            cb(blobInfo.blobUri(), { title: file.name });
+          };
+        };
+        input.click();
+      }
+    });
   </script>
 
 </head>
-<body class="hold-transition skin-yellow sidebar-mini">
+<body class="hold-transition skin-green-light sidebar-mini">
 <div class="wrapper">
 
   <header class="main-header">
@@ -101,7 +100,7 @@
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>L</b>MP</span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>Lit</b>igation</span>
+      <span class="logo-lg"><b>Kalya</b>LIT</span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
@@ -136,13 +135,13 @@
                 </div>
                 <div class="pull-right">
                   <a class="btn btn-flat btn-danger" href="{{ url('/logout') }}"
-                      onclick="event.preventDefault();
+                     onclick="event.preventDefault();
                               document.getElementById('logout-form').submit();">
-                      Logout
+                    Logout
                   </a>
 
                   <form id="logout-form" action="/logout" method="POST" style="display: none;">
-                      {{ csrf_field() }}
+                    {{ csrf_field() }}
                   </form>
                 </div>
               </li>
@@ -170,7 +169,7 @@
       <form action="#" method="get" class="sidebar-form">
         <div class="input-group">
           <input type="text" name="q" class="form-control" placeholder="Search...">
-              <span class="input-group-btn">
+          <span class="input-group-btn">
                 <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
                 </button>
               </span>
@@ -192,30 +191,30 @@
             <li><a href="/system/view/users"><i class="fa fa-circle-o"></i>View Users</a></li>
           </ul>
         </li>
-          <li class="treeview">
-              <a href="#">
-                  <i class="fa fa-gavel"></i> <span>Matters</span>
-                  <span class="pull-right-container">
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-gavel"></i> <span>Matters</span>
+            <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
-              </a>
-              <ul class="treeview-menu">Cases
-                  <li><a href="/system/matter/new"><i class="fa fa-circle-o"></i>New Matter</a></li>
-                  <li><a href="/system/matter/view"><i class="fa fa-circle-o"></i>View Matters</a></li>
-              </ul>
-          </li>
-          <li class="treeview">
-              <a href="#">
-                  <i class="fa fa-phone"></i> <span>Contacts</span>
-                  <span class="pull-right-container">
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="/system/matter/new"><i class="fa fa-circle-o"></i>New Matter</a></li>
+            <li><a href="/system/cases/view"><i class="fa fa-circle-o"></i>View Matters</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-phone"></i> <span>Contacts</span>
+            <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
-              </a>
-              <ul class="treeview-menu">
-                  <li><a href="/system/new_user"><i class="fa fa-circle-o"></i>Add Contact</a></li>
-                  <li><a href="/system/view/users"><i class="fa fa-circle-o"></i>View Contacts</a></li>
-              </ul>
-          </li>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="/system/new_user"><i class="fa fa-circle-o"></i>Add Contact</a></li>
+            <li><a href="/system/view/users"><i class="fa fa-circle-o"></i>View Contacts</a></li>
+          </ul>
+        </li>
       </ul>
     </section>
     <!-- /.sidebar -->
@@ -230,23 +229,23 @@
         <small>Control panel</small>
       </h4>
 
-        @yield('content')
-      </div>
-    </section>
-    <!-- /.content -->
+    @yield('content')
   </div>
-  <!-- /.content-wrapper -->
-  <footer class="main-footer">
-    <div class="pull-right hidden-xs">
-      <b>Version</b> 1.0.0
-    </div>
-    <p>&copy;
+  </section>
+  <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
+<footer class="main-footer">
+  <div class="pull-right hidden-xs">
+    <b>Version</b> 1.0.0
+  </div>
+  <p>&copy;
     <script>
-        document.write(new Date().getFullYear())
+      document.write(new Date().getFullYear())
     </script>,
     <a href="http://www.imond.co.ke" target="_blank">kalya &amp; CO</a>. All rights
-      reserved.</p>
-  </footer>
+    reserved.</p>
+</footer>
 
 </div>
 <!-- ./wrapper -->
@@ -263,21 +262,18 @@
   $(".delete").on("submit", function(){
     return confirm("You are about to delete a record, Continue?");
   });
-
 </script>
 
 <script>
   $(".hire").on("submit", function(){
     return confirm("You are about to Hire a Writer, Continue?");
   });
-
 </script>
 
 <script>
   $(".deletexp").on("submit", function(){
     return confirm("You are about to permanently delete an applicaation record, Continue?");
   });
-
 </script>
 <!-- Bootstrap 3.3.6 -->
 <script src="{{ asset ('dash/bootstrap/js/bootstrap.min.js')}}"></script>

@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe79cae9-ad2c-4db0-bea5-a9f2f1cdf432" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/system/matters/view.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MatterCtrl.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MatterCtrl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/system/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/system/dashboard.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,11 +33,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/system/dashboard.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3120">
-              <caret line="208" column="39" selection-start-line="208" selection-start-column="39" selection-end-line="208" selection-end-column="39" />
+            <state relative-caret-position="299">
+              <caret line="317" column="7" selection-start-line="317" selection-start-column="7" selection-end-line="317" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -54,7 +51,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/system/matters/view.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="299">
@@ -95,11 +92,11 @@
         <option value="$PROJECT_DIR$/resources/views/system/users/view.blade.php" />
         <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
         <option value="$PROJECT_DIR$/database/seeds/UserTableSeeder.php" />
-        <option value="$PROJECT_DIR$/resources/views/system/dashboard.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/system/matters/new.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/MatterCtrl.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/system/matters/view.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/system/dashboard.blade.php" />
       </list>
     </option>
   </component>
@@ -346,7 +343,7 @@
       <workItem from="1552372893916" duration="106000" />
       <workItem from="1552381933406" duration="3450000" />
       <workItem from="1552468572103" duration="84000" />
-      <workItem from="1553269082519" duration="1178000" />
+      <workItem from="1553269082519" duration="1292000" />
     </task>
     <task id="LOCAL-00001" summary="new user ui">
       <created>1551623635408</created>
@@ -366,7 +363,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26234000" />
+    <option name="totallyTimeSpent" value="26348000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="696" extended-state="6" />
@@ -522,13 +519,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/system/dashboard.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3120">
-          <caret line="208" column="39" selection-start-line="208" selection-start-column="39" selection-end-line="208" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/system/matters/new.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -557,6 +547,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
           <caret line="52" column="11" selection-start-line="52" selection-start-column="11" selection-end-line="52" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/system/dashboard.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="317" column="7" selection-start-line="317" selection-start-column="7" selection-end-line="317" selection-end-column="7" />
         </state>
       </provider>
     </entry>
