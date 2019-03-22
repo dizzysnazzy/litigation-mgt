@@ -44,7 +44,7 @@ Route::get('/system/view/users', [
 Route::delete('/system/profile/{id}/delete', [
     'uses' => 'User\newUserCtrl@deleteUser',
 ]);
-//matter view add
+//matter view add edit destroy
 Route::get('/system/matter/new', 'MatterCtrl@index');
 
 Route::post('/system/matter/new', 'MatterCtrl@newMatter');
@@ -52,5 +52,9 @@ Route::post('/system/matter/new', 'MatterCtrl@newMatter');
 Route::get('/system/cases/view', 'MatterCtrl@viewMatters');
 
 Route::get('/system/case/{id}/view', 'MatterCtrl@viewMatter');
+
+Route::get('/system/case/{id}/update', 'MatterCtrl@editMatter');
+
+Route::put('/system/case/{id}/update', 'MatterCtrl@updateMatter');
 
 Route::delete('/system/matter/{id}/delete', 'MatterCtrl@destroy');

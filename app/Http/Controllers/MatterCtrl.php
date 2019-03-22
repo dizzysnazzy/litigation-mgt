@@ -49,6 +49,38 @@ class MatterCtrl extends Controller
         return view('system.matters.view-matter', compact('case'));
     }
 
+    public function editMatter($id)
+    {
+        $case = Matter::findOrFail($id);
+
+        $advocates = Profile::where('designation', 'advocate')->get();
+
+        return view('system.matters.edit', compact('case', 'advocates'));
+    }
+
+    public function updateMatter($id, Request $request)
+    {
+        $case = Matter::findOrFail($id);
+
+        $user =  Sentinel::getUser()->email;
+
+        $case->matter_name  = $request->input('matter_name');
+        $case->matter_type = $request->input('matter_type');
+        $case->counsel_incharge = $request->input('counsel_incharge');
+        $case->opposing_counsel = $request->input('opposing_counsel');
+        $case->file_date = $request->input('file_date');
+        $case->client_name = $request->input('client_name');
+        $case->client_email = $request->input('client_email');
+        $case->client_mobile = $request->input('client_mobile');
+        $case->matter_status = $request->input('matter_status');
+        $case->created_by = $user;
+        $case->student_incharge = $request->input('student_incharge');
+        $case->clerk_incharge = $request->input('clerk_incharge');
+        $case->save();
+
+        return redirect('/system/case/'.$id.'/view');
+    }
+
     public function destroy($id)
     {
         $matter = Matter::findOrFail($id);

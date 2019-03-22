@@ -20,4 +20,9 @@ class Matter extends Model
         'student_incharge',
         'clerk_incharge'
     ];
+
+    public function tasks()
+    {
+        return $this->hasMany('fms\Task');
+    }
 }
