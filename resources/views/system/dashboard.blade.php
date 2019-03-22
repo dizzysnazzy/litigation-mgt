@@ -45,7 +45,7 @@
   <!-- Main CSS Stylesheet -->
   <link rel="stylesheet" type="text/css" href="{{ asset('blog/css/style.css')}}">
 
-  @stack('js')
+  @stack('css')
 
   <script>
     tinymce.init({
@@ -251,9 +251,10 @@
 
 </div>
 <!-- ./wrapper -->
-
+@stack('js')
 <!-- jQuery 2.2.3 -->
-<script src="{{ asset ('dash/plugins/jQuery/jquery-2.2.3.min.js')}}"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
 <!-- <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script> -->
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
@@ -290,7 +291,6 @@
 <!-- jQuery Knob Chart -->
 <script src="{{ asset ('dash/plugins/knob/jquery.knob.js')}}"></script>
 <!-- daterangepicker -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
 <script src="{{ asset ('dash/plugins/daterangepicker/daterangepicker.js')}}"></script>
 <!-- datepicker -->
 <script src="{{ asset ('dash/plugins/datepicker/bootstrap-datepicker.js')}}"></script>
@@ -309,12 +309,6 @@
 <!-- DataTables -->
 <script src="{{ asset ('dash/plugins/datatables/jquery.dataTables.min.js')}}"></script>
 <script src="{{ asset ('dash/plugins/datatables/dataTables.bootstrap.min.js')}}"></script>
-
-<!-- <script type="text/javascript" src="{{ asset('blog/js/jquery.min.js')}}"></script> -->
-<script type="text/javascript" src="{{ asset('blog/js/plugin.js')}}"></script>
-
-<!-- Main Javascript File  -->
-<script type="text/javascript" src="{{ asset('blog/js/scripts.js')}}"></script>
 
 </body>
 </html>

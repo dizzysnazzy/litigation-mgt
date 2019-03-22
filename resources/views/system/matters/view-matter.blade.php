@@ -1,10 +1,8 @@
 @extends('system.dashboard')
 
 @push('js')
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.1.0/fullcalendar.min.css' />
-    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.1.0/fullcalendar.min.js'></script>
+    <script src="{{ asset('fullcalendar/packages/core/main.js') }}"></script>
+    <script src="{{ asset('fullcalendar/packages/daygrid/main.js') }}"></script>
     <script>
         $(document).ready(function() {
             // page is now ready, initialize the calendar...
@@ -22,6 +20,11 @@
         });
     </script>
 @endpush
+@push('css')
+    <link href="{{ asset('fullcalendar/packages/core/main.css') }}" rel='stylesheet' />
+    <link href="{{ asset('fullcalendar/packages/daygrid/main.css') }}" rel='stylesheet' />
+@endpush
+
 @section('content')
     <div class="row">
         <div class="col-md-2">
