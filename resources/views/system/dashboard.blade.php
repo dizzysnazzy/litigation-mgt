@@ -187,8 +187,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="/system/new_user"><i class="fa fa-circle-o"></i>Add User</a></li>
-            <li><a href="/system/view/users"><i class="fa fa-circle-o"></i>View Users</a></li>
+            <li><a href="/system/new_user"><i class="fa fa-angle-double-right"></i>Add User</a></li>
+            <li><a href="/system/view/users"><i class="fa fa-angle-double-right"></i>View Users</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -199,8 +199,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="/system/matter/new"><i class="fa fa-circle-o"></i>New Matter</a></li>
-            <li><a href="/system/cases/view"><i class="fa fa-circle-o"></i>View Matters</a></li>
+            <li><a href="/system/matter/new"><i class="fa fa-angle-double-right"></i>New Matter</a></li>
+            <li><a href="/system/cases/view"><i class="fa fa-angle-double-right"></i>View Matters</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -211,8 +211,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="/system/new_user"><i class="fa fa-circle-o"></i>Add Contact</a></li>
-            <li><a href="/system/view/users"><i class="fa fa-circle-o"></i>View Contacts</a></li>
+            <li><a href="/system/new_user"><i class="fa fa-angle-double-right"></i>Add Contact</a></li>
+            <li><a href="/system/view/users"><i class="fa fa-angle-double-right"></i>View Contacts</a></li>
           </ul>
         </li>
       </ul>

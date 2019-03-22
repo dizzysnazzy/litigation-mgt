@@ -36,8 +36,8 @@
                     <td>{{$matter->client_mobile}}</td>
                     <td>{{$matter->clerk_incharge}}</td>
                     <td>{{$matter->matter_status}}</td>
-                    <td> <a href="/system/matter/view"> <i class="fa fa-edit"></i> </a> </td>
-                    <td> <a href="/system/matter/view"> <i class="fa fa-eye"></i> </a> </td>
+                    <td> <a href="/system/case/{{$matter->id}}/edit"> <i class="fa fa-edit"></i> </a> </td>
+                    <td> <a href="/system/case/{{$matter->id}}/view"> <i class="fa fa-eye"></i> </a> </td>
                     <td>
                         <form class="deletestu" action="/system/matter/{{ $matter->id }}/delete" method="post">
                             <input type="hidden" name="_method" value="delete">

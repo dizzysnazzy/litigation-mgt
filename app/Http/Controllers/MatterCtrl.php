@@ -41,11 +41,14 @@ class MatterCtrl extends Controller
         $matters = Matter::simplePaginate('10');
         return view('system.matters.view', compact('matters'));
     }
+
     public function viewMatter($id)
     {
-        $matter = Matter::findOrFail($id);
-        return view('system.matters.view-matter', compact('matter'));
+        $case = Matter::findOrFail($id);
+
+        return view('system.matters.view-matter', compact('case'));
     }
+
     public function destroy($id)
     {
         $matter = Matter::findOrFail($id);

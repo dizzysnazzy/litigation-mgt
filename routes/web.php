@@ -51,4 +51,6 @@ Route::post('/system/matter/new', 'MatterCtrl@newMatter');
 
 Route::get('/system/cases/view', 'MatterCtrl@viewMatters');
 
+Route::get('/system/case/{id}/view', 'MatterCtrl@viewMatter');
+
 Route::delete('/system/matter/{id}/delete', 'MatterCtrl@destroy');
