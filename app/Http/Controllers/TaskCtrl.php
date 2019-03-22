@@ -18,9 +18,9 @@ class TaskCtrl extends Controller
 
     public function addTask($id)
     {
-        $matter = Matter::findOrFail($id);
+        $case = Matter::findOrFail($id);
 
-        return view('system.tasks.new', compact('matter'));
+        return view('system.tasks.new', compact('case'));
     }
 
     public function postTask(Request $request, $id)

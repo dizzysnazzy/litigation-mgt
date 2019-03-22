@@ -18,7 +18,7 @@
         </div>
 
         <form class="form-horizontal" role="form" method="POST" enctype="multipart/form-data"
-              action="{{ url('/system/task/new') }}">
+              action="/system/task/{{$case->id}}/new">
             <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
             <div class="form-group">

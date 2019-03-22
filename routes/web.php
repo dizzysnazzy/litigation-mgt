@@ -62,3 +62,5 @@ Route::delete('/system/matter/{id}/delete', 'MatterCtrl@destroy');
 //Tasks view
 Route::get('/system/task/{id}/new', 'TaskCtrl@addTask');
 
+Route::post('/system/task/{id}/new', 'TaskCtrl@postTask');
+
